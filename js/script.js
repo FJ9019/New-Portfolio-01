@@ -19,6 +19,8 @@ if(navClose){
     })
 }
 
+
+
 /*===== Remove Menu Mobile =====*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -28,6 +30,8 @@ const linkAction = () =>{
     navMennu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
 
 /*===== Swiper Projects =====*/
 let swiperProjects = new Swiper(".projects__container", {
@@ -41,8 +45,12 @@ let swiperProjects = new Swiper(".projects__container", {
     pagination: {
         el: ".swiper-pagination",
     },
-    mousewheel: true,
-    keyboard: true,
+    breakpoints: {
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: -56,
+        },
+      },
 });
 
 /*===== Swiper Testimonial =====*/
