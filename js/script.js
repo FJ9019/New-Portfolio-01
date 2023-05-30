@@ -63,3 +63,13 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
       prevEl: ".swiper-button-prev",
     },
 });
+
+
+/*===== Email JS =====*/
+const contactForm = document.getElementById('contact-form'),
+      contactName = document.getElementById('contact-name'),
+      contactEmail = document.getElementById('contact-email'),
+      contactProject = document.getElementById('contact-project'),
+      contactMessage = document.getElementById('contact-message'),
+
+const       
