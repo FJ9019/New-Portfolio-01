@@ -91,6 +91,7 @@ const sendEmail = (e) =>{
 }
 contactForm.addEventListener('submit', sendEmail)
 
+
 /*===== Scroll Sections Active Link =====*/
 const sections = document.querySelectorAll('selection[id]')
 
@@ -111,3 +112,28 @@ const scrollActive = () =>{
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+
+/*===== Show Scroll Up =====*/
+const scrollUp = () =>{
+       const srcollUp = document.getElementById('scroll-up')
+    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup
+       this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                                               : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+
+
+/*===== Dark Light Theme =====*/
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bx-sun'
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains('iconTheme') ? 'bx bx-moon' : 'bx bx-sun'
+
