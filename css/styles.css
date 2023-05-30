@@ -799,6 +799,43 @@ body.dark-theme {
   z-index: 1;
 }
 
+.contact__form-tag {
+  position: absolute;
+  top: -.75rem;
+  left: 1.25rem;
+  z-index: 10;
+  background-color: var(--body-color);
+  color: var(--title-color);
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  padding: .35rem;
+}
+
+.contact__form-area {
+  height: 10rem;
+}
+
+.contact__form-area textarea {
+  resize: none;
+}
+
+.contact__form .contact__button {
+  border: none;
+  background: none;
+  font-size: var(--h2-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  outline: none;
+  margin-top: .75rem;
+}
+
+.contact__form
+.contact__button i {
+  font-size: 1.5rem;
+  font-weight: initial;
+}
+
 /* Status color */
 
 
