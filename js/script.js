@@ -72,4 +72,21 @@ const contactForm = document.getElementById('contact-form'),
       contactProject = document.getElementById('contact-project'),
       contactMessage = document.getElementById('contact-message'),
 
-const       
+const sendEmail = (e) =>{
+    e.preventDefault*()
+
+    // Check if the field has a value
+    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ""){
+        // Add and remove color
+        contactMessage.classList.remove('color-blue')
+        contactMessage.classList.add('color-red')
+
+        // Show message
+        contactMessage.textContent = 'Write all the input fields 📩'
+    }else {
+        // serviceID - templadeID - #form - publickey
+        emailjs.sendForm('service_8ii265v','template_85g6ftk','#contact-form','JLTbbG-0B3efvdu3l')
+        
+    }
+}
+contactForm.addEventListener('submit', sendEmail)
