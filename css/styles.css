@@ -1027,6 +1027,10 @@ body.dark-theme {
     margin: 0 auto;
   }
 
+  .skill__content {
+    margin-top: 40px;
+  }
+
   .skills__container {
     justify-content: center;
   }
@@ -1246,6 +1250,10 @@ body.dark-theme {
 
   .skills__container {
     column-gap: 10rem;
+  }
+
+  .skill__content {
+    margin-top: 40px;
   }
 
   .skills__title {
