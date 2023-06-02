@@ -79,7 +79,7 @@ const sendEmail = (e) =>{
     contactMessage.textContent = 'Write all the input fields 📩' 
   }else{
     // serviceID - templateID - #form - publicKey
-    emailjs.sendForm('','','#contact-form','')
+    emailjs.sendForm('service_97db7zh','template_e24br2n','#contact-form','JLTbbG-0B3efvdu3l')
       .then(() =>{
         // Show message and add color
         contactMessage.classList.add('color-blue')
