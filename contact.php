@@ -1,4 +1,5 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Get the form data
   $user_name = $_POST["user_name"];
