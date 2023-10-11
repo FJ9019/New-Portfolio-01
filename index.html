@@ -127,7 +127,7 @@
                             </h3>
 
                             <p class="home__info-description">
-                                Hi, I'm Jerry, Frontend - Backend Developer.
+                                I'm Jerry, Frontend - Backend Developer.
                                 Passionate about designing beautiful web
                                 interfaces. Based in Haiti.
                             </p>
@@ -615,7 +615,7 @@
                             <!--==================== TESTIMONIAL 1 ====================-->
                             <div class="testimonial__content swiper-slide">
                                 <p class="testimonial__description">
-                                    “Working with Chris is to give a good
+                                    “Working with Jerry is to give a good
                                      impression, I carry out my project at a good
                                      cost, with excellent quality and attention. 
                                      Great service and recommended.”
@@ -630,7 +630,7 @@
                              <!--==================== TESTIMONIAL 2 ====================-->
                              <div class="testimonial__content swiper-slide">
                                 <p class="testimonial__description">
-                                    “Working with Chris is to give a good
+                                    “Working with Jerry is to give a good
                                      impression, I carry out my project at a good
                                      cost, with excellent quality and attention. 
                                      Great service and recommended.”
@@ -645,7 +645,7 @@
                              <!--==================== TESTIMONIAL 3 ====================-->
                              <div class="testimonial__content swiper-slide">
                                 <p class="testimonial__description">
-                                    “Working with Chris is to give a good
+                                    “Working with Jerry is to give a good
                                      impression, I carry out my project at a good
                                      cost, with excellent quality and attention. 
                                      Great service and recommended.”
@@ -714,23 +714,23 @@
                             <i class="ri-send-plane-line"></i> Write me your project
                         </h3>
 
-                        <form action="" class="contact__form" id="contact-form">
+                        <form action="mail.php" class="contact__form" id="contact-form" method="POST">
                             <div class="contact__form-div">
-                                <label class="contact__form-tag">Names</label>
+                                <label for="user_name" class="contact__form-tag">Names</label>
                                 <input type="text" name="user_name" required placeholder="Write your names" class="contact__form-input" id="contact-name">
                             </div>
 
                             <div class="contact__form-div">
-                                <label class="contact__form-tag">Mail</label>
+                                <label for="user_email" class="contact__form-tag">Mail</label>
                                 <input type="eamil" name="user_email" required placeholder="Write your eamil" class="contact__form-input" id="contact-email">
                             </div>
 
                             <div class="contact__form-div contact__form-area">
-                                <label class="contact__form-tag">Project</label>
+                                <label for="user_project" class="contact__form-tag">Project</label>
                                 <textarea name="user_project" placeholder="Write your project" id="contact-project" class="contact__form-input"></textarea>
                             </div>
 
-                            <p class="contact__message" id="contact-message"></p>
+                            <p for="contact_message" class="contact__message" id="contact-message"></p>
 
                             <button type="submit" class="contact__button">
                                 Submit <i class="ri-arrow-right-up-line"></i>
@@ -745,7 +745,9 @@
         <footer class="footer">
             <div class="footer__container container">
                 <h1 class="footer__title">Jerry</h1>
-                <p>Frontend Developer</p>
+                <p>Frontend Developer <br> <br>
+                   Backend Developer 
+                </p>
 
                 <ul class="footer__list">
                     <li>
