@@ -61,7 +61,6 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 
 /*=============== EMAIL JS ===============*/
 
-
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
     
